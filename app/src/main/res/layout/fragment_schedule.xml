@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.omar.diabetestracerapp.FragmentSchedule">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <Spinner
+                android:id="@+id/spinnerMonth"
+                android:layout_width="0dp"
+                android:layout_weight="0.333"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerYear"
+                android:layout_weight="0.333"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"/>
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="0.333"
+                android:id="@+id/spinnerType"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lvEvents"/>
+    </LinearLayout>
+
+</FrameLayout>
